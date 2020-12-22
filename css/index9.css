@@ -1,0 +1,123 @@
+.box{
+	width: 100%;
+}
+.top{
+	width: 100%;
+	height: 25rem;
+	background-image: url(../img/lingquanbej_01.gif);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.biaot{
+	width: 92%;
+	margin-left: 3%;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+.biaot>p{
+	height: 7rem;
+	line-height: 7rem;
+	color: rgb(255,255,255);
+}
+.biaot>p:nth-child(1){
+	width: 10%;	
+	font-size: 2.3rem;
+}
+.biaot>p a{
+	color: white;
+}
+.biaot>p:nth-child(2){
+	font-size: 1.9rem;
+	font-weight: 500;
+}
+.biaot>p:nth-child(3){
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+.down{
+	width: 100%;
+	height: 41.7rem;
+	padding-top: 1rem;
+	margin-top: -1rem;
+	background-color: rgb(241,241,241);
+}
+.down>div{
+	width: 94%;
+	margin-left: 3%;
+	padding-bottom: 1rem;
+	background: white;
+	margin-top: 1rem;
+	border-radius: 1rem;
+	display: flex;
+	justify-content: space-between;
+}
+.down>div>ul{
+	margin: 0.6rem;
+	width: 25%;
+	text-align: center;
+	background-color: rgb(255,247,250);
+	border-radius: 0.5rem;
+}
+.down>div>ul>li{
+	width: 100%;
+	color: rgb(227,40,32);
+}
+.down>div>ul>li:nth-child(1){
+	margin-top: 1rem;
+
+	font-size:3rem ;
+}
+.down>div>ul>li:nth-child(1)>span{
+	font-size: 1.5rem;
+}
+.down>div>ul>li:nth-child(2){
+	font-size: 1.7rem;
+	margin-top: -0.5rem;
+	padding-bottom: 1rem;
+}
+.down>div>div{
+	width: 55%;
+}
+.down>div>div>p{
+	margin-top: 1rem;
+}
+.down>div>div>p:nth-child(1){
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+.down>div>div>p:nth-child(1)>span{
+	margin-right: 0.5rem;
+	width: 1.8rem;
+	height: 1.8rem;
+	text-align: center;
+	line-height: 1.8rem;
+	border-radius: 0.3rem;
+	font-size: 1.3rem;
+	display: inline-block;
+	color: white;
+	background-color: rgb(232,43,49);
+}
+.down>div>div>p:nth-child(2){
+	font-size: 1.3rem;
+	color: rgb(95,100,138);
+}
+.down>div>div>p:nth-child(3){
+	width: 90%;
+	color: rgb(233,44,51);
+	padding: 0.2rem;
+	border: 1px solid rgb(233,44,51);
+	border-radius: 0.3rem;
+}
+.down>div>p{
+	width: 18%;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+	margin-top: 7rem;
+	text-align: center;
+	line-height: 2.5rem;
+	border-radius: 1.5rem;
+	height: 2.5rem;
+	color: white;
+	background-color: rgb(232,42,48);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index5.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<p></p>
+			<div class="top">
+				<ul>
+					<li><a href="index.html"><img src="img/ZUOO.png"/></a></li>
+					<li>商品详情</li>
+				</ul>
+			</div>
+			<div class="one">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/500870919.png"/></div>
+						<div class="swiper-slide"><img src="img/500870919.png"/></div>
+						<div class="swiper-slide"><img src="img/500870919.png"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="two">
+				<ul class="shang">
+					<li>正宗山东烟台红富士、红富士、嘎啦、桑萨、红将军、金冠</li>
+				</ul>
+				<ul class="zhong">
+					<li>
+						<p><span>￥66.00</span><span>￥120.00</span></p>
+						<p><img src="img/zhuanfa.png"/></p>
+					</li>
+				</ul>
+				<ul class="xia">
+					<li>红富士是从普通的富士的芽&nbsp;(枝)&nbsp;变种选育出的着色系富士的统称。富士苹果是日本农林水产省果树试验场盛冈分厂于</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<div class="three">
+					<ul class="left">
+						<li>
+							<p><img src="img/kefu.png"/></p>
+							<p>客服</p>
+						</li>
+						<li>
+							<p><img src="img/gouwu.png"/></p>
+							<p><a href="index4.html">购物车</a></p>
+						</li>
+					</ul>
+					<ul class="right">
+						<li>加入购物车</li>
+						<li>立即购买</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var swiper = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 1000,
+				stopOnLastSlide: false,
+				disableOnInteraction: true,
+			},
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	</script>
+</html>

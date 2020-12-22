@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/index4.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<title></title>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="box1">
+				<div class="one">
+					<ul>
+						<li><img src="img/ZUOO.png" /></li>
+						<li>购物车</li>
+						<li>编辑</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tow">
+				<div class="tow1">
+					<p><span><input type="checkbox" name="" id="quan" value="" /></span><span>百果园</span></p>
+					<div class="tow2">
+						<p><input type="checkbox" name="" id="xuan" value="" /></p>
+						<ul class="left">
+							<li><img src="img/IMG_4629_03.jpg" /></li>
+							<li class="left1">
+								<ul>
+									<li>百果园 PAGOODA [1KG] ...</li>
+									<li>[1kg] A级-三红蜜柚 （中） 超重...</li>
+									<li>周一至周日，免预约</li>
+									<li class="left2">
+										<ul>
+											<li id="dan">￥8.9</li>
+											<li>￥19.9</li>
+											<li>4.47折</li>
+											<li>
+												<ul>
+													<li onclick="jian()">-</li>
+													<li id="ge">0</li>
+													<li onclick="jia()">+</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<!--第二-->
+					<div class="tow2">
+						<p><input type="checkbox" name="" id="xuan" value="" /></p>
+						<ul class="left">
+							<li><img src="img/IMG_4629_06.jpg" /></li>
+							<li class="left1">
+								<ul>
+									<li>百果园 PAGOODA [500g</li>
+									<li>[500g] A级-克瑞森无核珍珠红 【...</li>
+									<li>周一至周日，免预约</li>
+									<li class="left2">
+										<ul>
+											<li id="dan1">￥15.9</li>
+											<li>￥32.9</li>
+											<li>4.83折</li>
+											<li>
+												<ul>
+													<li onclick="jian1()">-</li>
+													<li id="ge1">0</li>
+													<li onclick="jia1()">+</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--第三-->
+
+				<div class="tow1">
+					<div class="tow2">
+						<p><input type="checkbox" name="" id="xuan" value="" /></p>
+						<ul class="left">
+							<li><img src="img/IMG_4629_08.png" /></li>
+							<li class="left1">
+								<ul>
+									<li>大山果业脆冬枣</li>
+									<li>脆冬枣，服务流程/时长: 咨询商家</li>
+									<li>周一至周日，免预约</li>
+									<li class="left2">
+										<ul>
+											<li id="dan2">￥13.8</li>
+											<li>￥16.8</li>
+											<li>8.21折</li>
+											<li>
+												<ul>
+													<li onclick="jian2()">-</li>
+													<li id="ge2">0</li>
+													<li onclick="jia2()">+</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--底部-->
+			<div class="bottom">
+				<ul>
+					<li><input type="checkbox" name="" id="" value="" /><span>全选</span></li>
+					<li>合计<span>￥</span><span id="zong">0</span></li>
+					<li onclick="jie()">结算</li>
+				</ul>
+			</div>
+
+			<div class="booter">
+				<ul class="booter1">
+					<li class="booter2">
+						<ul>
+							<a href="index.html">
+								<li><img src="img/shouye_03.png"/></li>
+								<li>首页</li>
+							</a>
+						</ul>
+					</li>
+					<li class="booter2">
+						<ul>
+							<a href="index3.html">
+								<li><img src="img/shouye_05.png"></li>
+								<li>分类</li>
+							</a>
+						</ul>
+					</li>
+					<li class="booter2">
+						<ul>
+							<li><img src="img/shouye_07.png"></li>
+							<li>购物车</li>
+						</ul>
+					</li>
+					<li class="booter2">
+						<ul>
+							<a href="index1.html">
+								<li><img src="img/shouye_09.png"></li>
+								<li>我的</li>
+							</a>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var dan = document.getElementById('dan');
+		var dan1 = document.getElementById('dan1');
+		var dan2 = document.getElementById('dan2');
+
+		var ge = document.getElementById('ge');
+		var ge1 = document.getElementById('ge1');
+		var ge2 = document.getElementById('ge2');
+		var quan = document.getElementById('quan');
+		var xuan = document.getElementById('xuan');
+
+		function jia() {
+			ge.innerHTML = parseInt(ge.innerHTML) + 1;
+		}
+
+		function jian() {
+			if(ge.innerHTML == 0) {
+				alert('不能再减了，再减就没了');
+			} else {
+				ge.innerHTML = parseInt(ge.innerHTML) - 1;
+			}
+		}
+
+		function jia1() {
+			ge1.innerHTML = parseInt(ge1.innerHTML) + 1;
+		}
+
+		function jian1() {
+			if(ge1.innerHTML == 0) {
+				alert('不能再减了，再减就没了');
+			} else {
+				ge1.innerHTML = parseInt(ge1.innerHTML) - 1;
+			}
+		}
+
+		function jia2() {
+			ge2.innerHTML = parseInt(ge2.innerHTML) + 1;
+		}
+
+		function jian2() {
+			if(ge2.innerHTML == 0) {
+				alert('不能再减了，再减就没了');
+			} else {
+				ge2.innerHTML = parseInt(ge2.innerHTML) - 1;
+			}
+		}
+	</script>
+
+</html>
